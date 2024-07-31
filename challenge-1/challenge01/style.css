@@ -1,0 +1,42 @@
+/* INSTRUCTIONS
+ *
+ * 1) Limit the total width of
+ *    the .intro-conent to about half
+ *    of it's parent
+ *
+ * 2) Stop the text from overflowing
+ *    out the bottom at small screen
+ *    widths
+ *
+ * You may modify the HTML if needed
+ *
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  background: #23424a;
+  color: white;
+/* This is good because using percentage for width- makes it responsive / adaptable in different screen sizes */
+  width: 80%;
+  margin: 0 auto;
+
+  padding: 2em;
+  /* dont specify the height of the parent container- you can let it grow with content esp on smaller devices.Specifying the height caps the content on smaller devices */
+  /* height: 300px; */  
+}
+
+.intro-content {
+ /* This is all about spacing inside the child div- so I just used padding. */
+  /* width: 50%; */
+  padding-right: 50%;
+  
+ 
+}
